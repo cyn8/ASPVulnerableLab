@@ -1,4 +1,4 @@
 version: 0.1
 dvSECRETS:
  custom_ignore_files_regex:
- - IgnoreJSRegex: '(.*?)(js)$'
+ - IgnoreJSFile: 'jquery.min.js'
